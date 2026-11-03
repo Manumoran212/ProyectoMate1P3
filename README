@@ -1,0 +1,50 @@
+Cálculo de ángulos con la ley de cosenos (Java)
+
+Programa de consola en Java que calcula un ángulo de un triángulo a partir de sus tres lados, usando la ley de cosenos y mostrando el resultado en grados (`cos⁻¹`).
+
+Requisitos
+
+- JDK 8 o superior.
+- Una terminal o cualquier IDE que ejecute Java.
+- No usa librerías externas, solo `java.util.Scanner` y `java.lang.Math`.
+
+Cómo ejecutarlo
+
+Desde la carpeta donde está el archivo:
+
+javac AnguloCoseno.java
+java AnguloCoseno
+
+Uso
+
+El programa pide los datos en este orden:
+
+1. El ángulo que se quiere calcular: `A`, `B` o `C` (en mayúscula).
+2. El lado `a`.
+3. El lado `b`.
+4. El lado `c`.
+
+Ejemplo
+
+Triángulo rectángulo 3-4-5, calculando el ángulo `A`:
+
+Inserte su ángulo
+A
+Inserte el lado a
+3
+Inserte el lado b
+4
+Inserte el lado c
+5
+El ángulo es: 36.86989764584402°
+
+Fórmulas
+
+Ley de cosenos, despejando el coseno del ángulo:
+
+| Ángulo | Fórmula |
+| A | `cos(A) = (b² + c² − a²) / (2·b·c)` |
+| B | `cos(B) = (a² + c² − b²) / (2·a·c)` |
+| C | `cos(C) = (a² + b² − c²) / (2·a·b)` |
+
+El ángulo final se obtiene con `Math.toDegrees(Math.acos(r))`.
